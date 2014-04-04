@@ -17,8 +17,6 @@ angular.module('app', [])
   }
 })
 
-.controller('AppCtrl', function($scope, $timeout) {});
-
-$(function(){
+.controller('AppCtrl', function($scope, $timeout) {
   $('h2').fitText();
 });
