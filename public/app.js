@@ -3,7 +3,7 @@ angular.module('app', [])
 .directive('countdown', function($timeout) {
   return {
     restrict: "A",
-    template: "{{ countdown.toString() }}",
+    templateUrl: '/countdown.html',
     link: function(scope, element, attributes) {
       var date = attributes.date.split('-');
       var time = attributes.time.split(':');
@@ -14,6 +14,12 @@ angular.module('app', [])
         $timeout(tick, 1000);
       })();
     }
+  }
+})
+
+.filter('zero', function() {
+  return function(input) {
+    return input.toString().length > 1 ? input : "0" + input;
   }
 })
 
