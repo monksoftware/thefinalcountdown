@@ -11,6 +11,12 @@ angular.module('app', [])
 
       (function tick() {
         scope.countdown = countdown(date);
+        var newLeft = parseInt($("#man").css('left')) + 50;
+        if(newLeft < (window.outerWidth - 200)){
+          $("#man").css('left', newLeft+"px");
+        }else{
+          $("#man").css('left', "150px");
+        }
         $timeout(tick, 1000);
       })();
     }
