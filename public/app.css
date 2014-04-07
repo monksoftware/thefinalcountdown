@@ -14,7 +14,7 @@ h2 {
   position: fixed;
   top:0;
   left:0;
-  height:100%;
+  height:80%;
   width:100%;
   display:table;
   pointer-events: none;
@@ -39,4 +39,30 @@ ul li {
   margin: 0;
   padding: .2em;
   border: 1px solid white;
+}
+
+#animation{
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+}
+
+#torri{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#gazometro{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#man{
+  position: absolute;
+  bottom: 0;
+  left: 150px;
 }
